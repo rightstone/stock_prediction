@@ -38,6 +38,8 @@ def get_candle_chart(company_code):
     second_tds = tds[1]  # 두 번째 td 지정
     high = second_tds.find('span', {'class': 'blind'}).text
 
+    # 거래량
+
     # open 시가
     second_tr = trs[1]  # 두 번째 tr 지정
     tds_second_tr = second_tr.find_all('td')  # 두 번째 tr 안에서 td를 list로
