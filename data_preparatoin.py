@@ -10,8 +10,6 @@ def get_bs_obj(company_code):
     bs_obj = BeautifulSoup(result.content, "html.parser")
     return bs_obj
 
-# company_code를 입력받아 now_price를 출력
-
 
 def get_price(company_code):
     bs_obj = get_bs_obj(company_code)
