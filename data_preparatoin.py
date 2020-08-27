@@ -40,6 +40,7 @@ def get_candle_chart(company_code):
 
     # 거래량
     print(trs)
+    print(type(trs))
 
     # open 시가
     second_tr = trs[1]  # 두 번째 tr 지정
